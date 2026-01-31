@@ -9,7 +9,13 @@ import {
   Wallet,
   Invoices,
   SupportTickets,
-  Settings
+  Settings,
+  Home,
+  Services,
+  Pricing,
+  HowItWorks,
+  About,
+  Contact
 } from './pages';
 import './App.css';
 
@@ -17,6 +23,14 @@ function App() {
   return (
     <Router>
       <Routes>
+        {/* Public routes */}
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/pricing" element={<Pricing />} />
+        <Route path="/how-it-works" element={<HowItWorks />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+
         {/* Auth routes */}
         <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<SignUp />} />
@@ -24,16 +38,15 @@ function App() {
 
         {/* Dashboard routes */}
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/services" element={<BuyServices />} />
-        <Route path="/orders" element={<MyOrders />} />
-        <Route path="/wallet" element={<Wallet />} />
-        <Route path="/invoices" element={<Invoices />} />
-        <Route path="/tickets" element={<SupportTickets />} />
-        <Route path="/settings" element={<Settings />} />
+        <Route path="/dashboard/services" element={<BuyServices />} />
+        <Route path="/dashboard/orders" element={<MyOrders />} />
+        <Route path="/dashboard/wallet" element={<Wallet />} />
+        <Route path="/dashboard/invoices" element={<Invoices />} />
+        <Route path="/dashboard/tickets" element={<SupportTickets />} />
+        <Route path="/dashboard/settings" element={<Settings />} />
 
-        {/* Default redirect */}
-        <Route path="/" element={<Navigate to="/dashboard" replace />} />
-        <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        {/* Catch-all - redirect to home */}
+        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </Router>
   );

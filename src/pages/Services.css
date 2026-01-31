@@ -1,0 +1,264 @@
+/* Page Header */
+.services-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.page-title {
+  font-size: 44px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.page-subtitle {
+  font-size: 18px;
+  margin: 0;
+  opacity: 0.95;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+/* Services Section */
+.services-section {
+  padding: 80px 20px;
+  background-color: #ffffff;
+}
+
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section-title {
+  font-size: 40px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+  font-size: 18px;
+  color: #6b7280;
+  margin: 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.service-category {
+  margin-bottom: 80px;
+}
+
+.service-category:last-child {
+  margin-bottom: 0;
+}
+
+.category-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 40px;
+  padding-bottom: 16px;
+  border-bottom: 3px solid #3b82f6;
+  display: inline-block;
+}
+
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.service-item {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: all 0.3s ease;
+}
+
+.service-item:hover {
+  border-color: #3b82f6;
+  box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+  transform: translateY(-4px);
+}
+
+.service-item-icon {
+  font-size: 40px;
+}
+
+.service-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0;
+}
+
+.service-item-description {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.service-item-price {
+  font-size: 20px;
+  font-weight: 700;
+  color: #3b82f6;
+  margin: 8px 0 0;
+}
+
+.service-item-btn {
+  background-color: #3b82f6;
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.service-item-btn:hover {
+  background-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.4);
+}
+
+/* Why Services Section */
+.why-services {
+  padding: 80px 20px;
+  background-color: #f9fafb;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.benefit-item {
+  text-align: center;
+}
+
+.benefit-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #10b981;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 auto 16px;
+}
+
+.benefit-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 8px;
+}
+
+.benefit-text {
+  font-size: 15px;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* CTA Section */
+.services-cta-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  text-align: center;
+}
+
+.cta-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin: 0 0 16px;
+  letter-spacing: -0.5px;
+}
+
+.cta-text {
+  font-size: 18px;
+  margin: 0 0 32px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.cta-primary-large {
+  background-color: #ffffff;
+  color: #667eea;
+  padding: 16px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-align: center;
+}
+
+.cta-primary-large:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 32px;
+  }
+
+  .page-subtitle {
+    font-size: 16px;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+
+  .category-title {
+    font-size: 22px;
+  }
+
+  .services-list {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .cta-title {
+    font-size: 28px;
+  }
+}
